@@ -27,7 +27,7 @@
   position: relative;
   top: 0;
   left: -100vw;
-  width: 10000vw;
+  width: 100vw;
 }
 
 .slides.shifting {
@@ -35,7 +35,7 @@
 }
 
 .slide img {
-  min-width: 100vw;
+  width: 100vw;
   height: 100vh;
   cursor: pointer;
   display: flex;
