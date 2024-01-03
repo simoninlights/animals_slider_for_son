@@ -1,60 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-  <title>Infinite Loop Slider</title>
-</head>
-<body>
-  <div id="slider" class="slider">
-    <div class="wrapper">
-      <div id="slides" class="slides">
-        <span class="slide"><img src="./img/alvan-nee-lvFlpqEvuRM-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/alvan-nee-T-0EW-SEbsE-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/andrew-s-ouo1hbizWwo-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/andriyko-podilnyk-RCfi7vgJjUY-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/anna-dudkova-md2_P9X7t4M-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/chris-arthur-collins-qGkVJ7Tx36s-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/cristian-castillo-73pyV0JJOmE-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/dim-hou-93AcQpzcASE-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/eduard-delputte-1P6LZ8S8XJc-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/fatty-corgi-1QsQRkxnU6I-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/hang-niu-rxvocsh0DUw-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/humberto-arellano-N_G2Sqdy9QY-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/izabelly-marques-Ytp_K5bwa0Q-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/jamie-street-UtrE5DcgEyg-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/jiasong-huang-ZQB7Nr9nUBo-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/joe-caione-qO-PIF84Vxg-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/justin-veenema-NH1d0xX6Ldk-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/kari-shea-eMzblc6JmXM-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/kelly-e1u0YdAkh9k-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/krista-mangulsone-9gz3wfHr65U-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/luke-macgillivray-p_qco2Eo-E0-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/michael-sum-LEpfefQf4rU-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/pacto-visual-cWOzOnSoh6Q-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/pauline-loroy-U3aF7hgUSrk-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/rick-t-t-uhScTLh4vSg-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/river-kao-5LVbbG74ykI-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/sam-chang-5-ckjYvTZQw-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/sergey-semin-vMNr5gbeeTk-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/steve-tsang-OZjypvcu3uo-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/tran-mau-tri-tam--81lVsfM4gQ-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/tran-mau-tri-tam-7QjU_u2vGDs-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/yan-laurichesse-3qZnN_M45Ds-unsplash.jpg" alt=""></span>
-        <span class="slide"><img src="./img/yerlin-matu-GtwiBmtJvaU-unsplash.jpg" alt=""></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Infinite Loop Slider</title>
+  </head>
+  <body>
+    <div id="slider" class="slider">
+      <div class="wrapper">
+        <div id="slides" class="slides">
+          <div class="slide">
+            <img src="./img/alvan-nee-lvFlpqEvuRM-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/alvan-nee-T-0EW-SEbsE-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/andrew-s-ouo1hbizWwo-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/andriyko-podilnyk-RCfi7vgJjUY-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="./img/anna-dudkova-md2_P9X7t4M-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/chris-arthur-collins-qGkVJ7Tx36s-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/cristian-castillo-73pyV0JJOmE-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="./img/daniel-hering-0_ole_Z2pV8-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/dim-hou-93AcQpzcASE-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/eduard-delputte-1P6LZ8S8XJc-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/fatty-corgi-1QsQRkxnU6I-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/hang-niu-rxvocsh0DUw-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/humberto-arellano-N_G2Sqdy9QY-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="./img/izabelly-marques-Ytp_K5bwa0Q-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/jamie-street-UtrE5DcgEyg-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/jiasong-huang-ZQB7Nr9nUBo-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/joe-caione-qO-PIF84Vxg-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/justin-veenema-NH1d0xX6Ldk-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/kari-shea-eMzblc6JmXM-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/kelly-e1u0YdAkh9k-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/krista-mangulsone-9gz3wfHr65U-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/luke-macgillivray-p_qco2Eo-E0-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="./img/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/michael-sum-LEpfefQf4rU-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/pacto-visual-cWOzOnSoh6Q-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/pauline-loroy-U3aF7hgUSrk-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/rick-t-t-uhScTLh4vSg-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/river-kao-5LVbbG74ykI-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/sam-chang-5-ckjYvTZQw-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/sergey-semin-vMNr5gbeeTk-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/steve-tsang-OZjypvcu3uo-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/tran-mau-tri-tam--81lVsfM4gQ-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/tran-mau-tri-tam-7QjU_u2vGDs-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="./img/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img src="./img/yan-laurichesse-3qZnN_M45Ds-unsplash.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/yerlin-matu-GtwiBmtJvaU-unsplash.jpg" alt="" />
+          </div>
+        </div>
+
+        <a id="prev" class="control prev"></a>
+        <a id="next" class="control next"></a>
       </div>
     </div>
-    <a id="prev" class="control prev"></a>
-    <a id="next" class="control next"></a>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

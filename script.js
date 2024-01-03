@@ -22,7 +22,7 @@ function slide(wrapper, items, prev, next) {
         posX2 = 0,
         posInitial,
         posFinal,
-        threshold = 100,
+        threshold = 200,
         slides = items.getElementsByClassName('slide'),
         slidesLength = slides.length,
         slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
