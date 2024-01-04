@@ -27,39 +27,15 @@ async function cacheFirst(request) {
     return cached ?? await fetch(request);
 };
 
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (event) => {
-  // Prevent the default prompt
-  event.preventDefault();
-
-  // Store the event to use it later
-  deferredPrompt = event;
-
-  // Show your custom installation prompt immediately
-  showInstallPrompt();
-});
-
-// Function to show your custom installation prompt
-function showInstallPrompt() {
-  // Trigger the installation prompt
-  deferredPrompt.prompt();
-
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice.then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the installation prompt');
-    } else {
-      console.log('User dismissed the installation prompt');
-    }
-
-    // Reset the deferredPrompt variable
-    deferredPrompt = null;
-  });
-}
-
-// Example: Show the installation prompt after a specific user action
-document.getElementById('someElement').addEventListener('click', () => {
-  // You can trigger the installation prompt when the user clicks on a specific element
-  showInstallPrompt();
-});
+function promptUserToInstall() {
+  if (window.matchMedia('(display-mode: browser)').matches) {
+    // This is the default mode
+    alert('You can install this app by clicking on the browser menu and selecting "Add to Home Screen."');
+  } else if (window.matchMedia('(display-mode: standalone)').matches) {
+    // The app is already installed and launched in standalone mode
+    alert('This app is already installed!');
+  } else {
+    // Should handle any other display modes
+    alert('Try installing this app by clicking on the browser menu and selecting "Add to Home Screen."');
+  }
+};
